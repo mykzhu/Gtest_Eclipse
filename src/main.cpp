@@ -10,11 +10,11 @@ Model *model = NULL;
 const int width = 1200;
 const int height = 1200;
 
-int main2(int argc, char** argv) {
+int main2(int argc, char* argv) {
 	if (2 == argc) {
-		model = new Model(argv[1]);
+		model = new Model(argv);
 	} else {
-		return 0;
+		return -1;
 	}
 
 	TGAImage image(width, height, TGAImage::RGB);

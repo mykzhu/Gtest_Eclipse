@@ -25,6 +25,5 @@ C_UPPER_DEPS :=
 SUBDIRS := \
 test \
 src \
-. \
 gtest_src/gtest \
 

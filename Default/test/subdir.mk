@@ -7,6 +7,9 @@ CPP_SRCS += \
 ../test/gtest_main.cpp \
 ../test/unittests.cpp 
 
+OBJ_SRCS += \
+../test/new.obj 
+
 OBJS += \
 ./test/gtest_main.o \
 ./test/unittests.o 
