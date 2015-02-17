@@ -3,11 +3,11 @@
 //#include "model.hpp"
 
 // Tests TGAImage().
-TEST(TGAImageTest, TGAImageCreation)
+TEST(TGAImageTest, TGAColorCreation)
 {
 	const TGAColor red = TGAColor(255, 0, 0, 255);
 	EXPECT_EQ(255, red.r);
-	EXPECT_EQ(255, red.g);
-	EXPECT_EQ(255, red.b);
+	EXPECT_EQ(0, red.g);
+	EXPECT_EQ(0, red.b);
 	EXPECT_EQ(255, red.a);
 }
