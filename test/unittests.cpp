@@ -1,11 +1,13 @@
 #include "gtest/gtest.h"
-//#include"tgaimage.h"
-#include "model.hpp"
+#include"tgaimage.h"
+//#include "model.hpp"
 
 // Tests TGAImage().
-TEST(TGAImageTest, TGAImage1) {
-	Model *model = NULL;
-	model = new Model("www");
-
-	ASSERT_EQ(1u, 1);
+TEST(TGAImageTest, TGAImageCreation)
+{
+	const TGAColor red = TGAColor(255, 0, 0, 255);
+	EXPECT_EQ(255, red.r);
+	EXPECT_EQ(255, red.g);
+	EXPECT_EQ(255, red.b);
+	EXPECT_EQ(255, red.a);
 }

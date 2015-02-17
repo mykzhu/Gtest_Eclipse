@@ -65,14 +65,14 @@ struct TGAColor {
 class TGAImage {
 protected:
 	unsigned char* data;
-//public:
+public:
 	int width;
 	int height;
 	int bytespp;
 
 	bool load_rle_data(std::ifstream &in);
 	bool unload_rle_data(std::ofstream &out);
-public:
+//public:
 	enum Format {
 		GRAYSCALE = 1, RGB = 3, RGBA = 4
 	};
@@ -95,5 +95,7 @@ public:
 	unsigned char *buffer();
 	void clear();
 };
+
+void line(int x0, int y0, int x1, int y1, TGAImage &image, TGAColor color);
 
 #endif //__IMAGE_H__
