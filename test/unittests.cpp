@@ -1,6 +1,8 @@
 #include "gtest/gtest.h"
+#include "gmock/gmock.h"
 #include "tgaimage.h"
 #include "main.h"
+#include <string.h>
 //#include "model.hpp"
 
 // Tests TGAImage().
@@ -35,6 +37,30 @@ TEST(TGAImageTest, TGAImageCreationWithParams)
 	EXPECT_FALSE(NULL==image.data);
 }
 
+TEST(TGAImageTest, TGAImageCreationWithImage)
+{
+	const int width = 120;
+	const int height = 120;
+
+	TGAImage image_tst(width, height, TGAImage::RGB);
+	TGAImage iTested(image_tst);
+	EXPECT_EQ(iTested.width, image_tst.width);
+	EXPECT_EQ(iTested.height, image_tst.height);
+	EXPECT_EQ(iTested.bytespp,image_tst.bytespp);
+}
+
+TEST(TGAImageTest, TGAImageOperatorEQ)
+{
+	const int width = 120;
+	const int height = 120;
+
+	TGAImage iTesting(width, height, TGAImage::RGB);
+	TGAImage iTested2;
+	iTested2 = iTesting;
+	EXPECT_EQ(iTested2.width, iTesting.width);
+	EXPECT_EQ(iTested2.height, iTesting.height);
+	EXPECT_EQ(iTested2.bytespp,iTesting.bytespp);
+}
 TEST(MainTest, TestModel1parameter)
 {
 	char argv2[7] ="onePar";
@@ -49,9 +75,9 @@ TEST(MainTest, TestModelNotExist)
 	EXPECT_EQ(0, main2(argc3, argv3));
 }
 
-TEST(MainTest, TestModelExist)
-{
-	char argv3[8] = "new.obj";
-	int argc3 = 2;
-	EXPECT_EQ(0, main2(argc3, argv3));
-}
+//TEST(MainTest, TestModelExist)
+//{
+//	char argv3[8] = "new.obj";
+//	int argc3 = 2;
+//	EXPECT_EQ(0, main2(argc3, argv3));
+//}

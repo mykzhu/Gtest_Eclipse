@@ -4,20 +4,20 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CC_SRCS += \
-../gtest_src/gtest/gtest-all.cc 
+../gmock_src/gmock-gtest-all.cc 
 
 OBJS += \
-./gtest_src/gtest/gtest-all.o 
+./gmock_src/gmock-gtest-all.o 
 
 CC_DEPS += \
-./gtest_src/gtest/gtest-all.d 
+./gmock_src/gmock-gtest-all.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-gtest_src/gtest/%.o: ../gtest_src/gtest/%.cc
+gmock_src/%.o: ../gmock_src/%.cc
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I"/home/dmitriy/Downloads/TGAgraph/gtest_src" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	g++ -I"/home/dmitriy/Downloads/TGAgraph/gmock_src" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

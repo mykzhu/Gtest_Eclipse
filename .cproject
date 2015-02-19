@@ -54,7 +54,7 @@
 							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1344917680" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1457591746"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.588949641" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.1625661852">
 								<option id="gnu.cpp.compiler.option.include.paths.1906427504" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/gtest_src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/gmock_src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1495593732" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -69,23 +69,23 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.229601537.1674461182" name="/" resourcePath="gtest_src">
-						<toolChain id="cdt.managedbuild.toolchain.gnu.base.2067958068" name="cdt.managedbuild.toolchain.gnu.base" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.229601537.1110384667" name="/" resourcePath="gmock_src">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.2098625806" name="cdt.managedbuild.toolchain.gnu.base" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
-							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1269256988" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1457591746"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.953498225" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.1625661852">
-								<option id="gnu.cpp.compiler.option.include.paths.544573563" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/gtest_src}&quot;"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.2099583215" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1457591746"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1200325715" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.1625661852">
+								<option id="gnu.cpp.compiler.option.include.paths.200836912" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/gmock_src}&quot;"/>
 								</option>
-								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1949819948" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1175812912" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.80372708" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.1320202004">
-								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.556122524" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.1230234106" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.1320202004">
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2013361601" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1646770587" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base.1788100429"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1000149402" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base.1292051542"/>
-							<tool id="cdt.managedbuild.tool.gnu.assembler.base.221133986" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base.1124270129">
-								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.639541149" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.697141419" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base.1788100429"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.869618784" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base.1292051542"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.553356028" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base.1124270129">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.630762477" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 						</toolChain>
 					</folderInfo>
@@ -97,7 +97,7 @@
 								<option id="gnu.cpp.compiler.option.include.paths.1974940803" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.other.other.1684607192" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fprofile-arcs -ftest-coverage -fPIC" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.other.other.1684607192" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fprofile-arcs -ftest-coverage -fPIC" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.330804840" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.328483162" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.1320202004">

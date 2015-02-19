@@ -26,5 +26,5 @@ SUBDIRS := \
 test \
 src \
 . \
-gtest_src/gtest \
+gmock_src \
 
